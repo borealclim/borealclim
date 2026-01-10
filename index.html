@@ -291,9 +291,29 @@
                 <nav class="nav" id="nav-menu" role="navigation" aria-label="Navigation principale">
                     <ul class="nav-list">
                         <li><a href="#accueil" class="nav-link">ACCUEIL</a></li>
-                        <li><a href="#contrats" class="nav-link">CONTRATS D'ENTRETIEN</a></li>
-                        <li><a href="#depannages" class="nav-link">DÉPANNAGES</a></li>
-                        <li><a href="#realisations" class="nav-link">LES RÉALISATIONS</a></li>
+                        <li class="nav-item-dropdown">
+                            <a href="#services" class="nav-link">NOS SERVICES</a>
+                            <div class="nav-dropdown">
+                                <a href="installation-climatisation.html">Installation Climatisation</a>
+                                <a href="installation-pompe-a-chaleur.html">Installation Pompe a Chaleur</a>
+                                <a href="depannage-climatisation.html">Depannage Climatisation</a>
+                                <a href="entretien-climatisation.html">Entretien & Maintenance</a>
+                            </div>
+                        </li>
+                        <li class="nav-item-dropdown">
+                            <a href="#zones" class="nav-link">ZONES</a>
+                            <div class="nav-dropdown">
+                                <a href="climatisation-paris.html">Paris</a>
+                                <a href="climatisation-seine-et-marne-77.html">Seine-et-Marne (77)</a>
+                                <a href="climatisation-hauts-de-seine-92.html">Hauts-de-Seine (92)</a>
+                                <a href="climatisation-seine-saint-denis-93.html">Seine-Saint-Denis (93)</a>
+                                <a href="climatisation-val-de-marne-94.html">Val-de-Marne (94)</a>
+                                <a href="climatisation-val-d-oise-95.html">Val-d'Oise (95)</a>
+                                <a href="climatisation-yvelines-78.html">Yvelines (78)</a>
+                                <a href="climatisation-essonne-91.html">Essonne (91)</a>
+                            </div>
+                        </li>
+                        <li><a href="#realisations" class="nav-link">REALISATIONS</a></li>
                         <li><a href="#contact" class="nav-link">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -406,6 +426,64 @@
         <span class="section-separator-icon">❄</span>
     </div>
 
+    <!-- Nos Services Section -->
+    <section class="services-overview" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="services-title">Nos Services</h2>
+                <p class="section-subtitle">Solutions completes pour votre confort thermique</p>
+            </div>
+            <div class="services-overview-grid">
+                <a href="installation-climatisation.html" class="service-overview-card">
+                    <div class="service-overview-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/>
+                        </svg>
+                    </div>
+                    <h3>Installation Climatisation</h3>
+                    <p>Pose professionnelle de climatiseurs split, multi-split et gainables. Marques premium.</p>
+                    <span class="service-link">En savoir plus</span>
+                </a>
+                <a href="installation-pompe-a-chaleur.html" class="service-overview-card">
+                    <div class="service-overview-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a10 10 0 0110 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Pompe a Chaleur</h3>
+                    <p>Chauffage economique et ecologique. Eligible aux aides MaPrimeRenov'. Jusqu'a -70% sur la facture.</p>
+                    <span class="service-link">En savoir plus</span>
+                </a>
+                <a href="depannage-climatisation.html" class="service-overview-card service-overview-urgent">
+                    <div class="service-overview-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Depannage Urgence</h3>
+                    <p>Intervention rapide 24h/24. Diagnostic et reparation de toutes les pannes climatisation.</p>
+                    <span class="service-link">En savoir plus</span>
+                </a>
+                <a href="entretien-climatisation.html" class="service-overview-card">
+                    <div class="service-overview-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Entretien & Maintenance</h3>
+                    <p>Contrats d'entretien pour optimiser vos equipements et prolonger leur duree de vie.</p>
+                    <span class="service-link">En savoir plus</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="section-separator">
+        <span class="section-separator-icon">❄</span>
+    </div>
+
     <!-- Services - Contrats d'entretien -->
     <section class="services" id="contrats" aria-labelledby="contrats-title">
         <div class="container">
@@ -425,6 +503,7 @@
                         <li>Optimisation des performances</li>
                         <li>Intervention prioritaire en cas de panne</li>
                     </ul>
+                    <a href="entretien-climatisation.html" class="btn btn-secondary">Decouvrir nos contrats</a>
                 </div>
             </div>
         </div>
@@ -581,12 +660,15 @@
                 <div class="emergency-cta-content">
                     <h3 class="emergency-cta-title">Une panne ? Contactez-nous immédiatement</h3>
                     <p class="emergency-cta-text">Nos techniciens interviennent rapidement sur toute l'Île-de-France</p>
-                    <a href="tel:+33699452113" class="btn btn-primary btn-large">
+                    <div class="emergency-cta-buttons">
+                        <a href="tel:+33699452113" class="btn btn-primary btn-large">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         06 99 45 21 13
                     </a>
+                        <a href="depannage-climatisation.html" class="btn btn-secondary btn-large">Voir tous nos depannages</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -828,6 +910,55 @@
         <span class="section-separator-icon">❄</span>
     </div>
 
+    <!-- Zones d'Intervention Section -->
+    <section class="zones-section" id="zones" aria-labelledby="zones-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="zones-title">Nos Zones d'Intervention</h2>
+                <p class="section-subtitle">Nous intervenons sur toute l'Ile-de-France</p>
+            </div>
+            <div class="zones-grid-home">
+                <a href="climatisation-paris.html" class="zone-card">
+                    <h3>Paris</h3>
+                    <p>20 arrondissements</p>
+                </a>
+                <a href="climatisation-seine-et-marne-77.html" class="zone-card">
+                    <h3>Seine-et-Marne (77)</h3>
+                    <p>Meaux, Melun, Chelles...</p>
+                </a>
+                <a href="climatisation-seine-saint-denis-93.html" class="zone-card">
+                    <h3>Seine-Saint-Denis (93)</h3>
+                    <p>Montreuil, Saint-Denis...</p>
+                </a>
+                <a href="climatisation-val-de-marne-94.html" class="zone-card">
+                    <h3>Val-de-Marne (94)</h3>
+                    <p>Creteil, Vitry, Champigny...</p>
+                </a>
+                <a href="climatisation-hauts-de-seine-92.html" class="zone-card">
+                    <h3>Hauts-de-Seine (92)</h3>
+                    <p>Boulogne, Nanterre...</p>
+                </a>
+                <a href="climatisation-val-d-oise-95.html" class="zone-card">
+                    <h3>Val-d'Oise (95)</h3>
+                    <p>Cergy, Argenteuil...</p>
+                </a>
+                <a href="climatisation-yvelines-78.html" class="zone-card">
+                    <h3>Yvelines (78)</h3>
+                    <p>Versailles, Saint-Germain...</p>
+                </a>
+                <a href="climatisation-essonne-91.html" class="zone-card">
+                    <h3>Essonne (91)</h3>
+                    <p>Evry, Massy, Corbeil...</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="section-separator">
+        <span class="section-separator-icon">❄</span>
+    </div>
+
     <!-- Contact Section -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="container">
@@ -923,9 +1054,19 @@
                 <div class="footer-section">
                     <h4 class="footer-heading">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#contrats">Contrats d'entretien</a></li>
-                        <li><a href="#depannages">Dépannages</a></li>
-                        <li><a href="#realisations">Les réalisations</a></li>
+                        <li><a href="installation-climatisation.html">Installation Climatisation</a></li>
+                        <li><a href="installation-pompe-a-chaleur.html">Pompe a Chaleur</a></li>
+                        <li><a href="depannage-climatisation.html">Depannage</a></li>
+                        <li><a href="entretien-climatisation.html">Entretien</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Zones d'Intervention</h4>
+                    <ul class="footer-links">
+                        <li><a href="climatisation-paris.html">Paris</a></li>
+                        <li><a href="climatisation-seine-et-marne-77.html">Seine-et-Marne (77)</a></li>
+                        <li><a href="climatisation-seine-saint-denis-93.html">Seine-Saint-Denis (93)</a></li>
+                        <li><a href="climatisation-val-de-marne-94.html">Val-de-Marne (94)</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -940,7 +1081,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 par Boreal Clim. Tous droits réservés.</p>
+                <p>&copy; 2024 Boreal Clim. Tous droits reserves. | <a href="mentions-legales.html">Mentions legales</a></p>
             </div>
         </div>
     </footer>

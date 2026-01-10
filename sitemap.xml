@@ -5,7 +5,7 @@
     <!-- Page d'accueil -->
     <url>
         <loc>https://www.borealclim.fr/</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2025-01-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -14,36 +14,126 @@
         </image:image>
     </url>
 
-    <!-- Section Contrats d'entretien -->
+    <!-- Pages Services -->
     <url>
-        <loc>https://www.borealclim.fr/#contrats</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://www.borealclim.fr/installation-climatisation.html</loc>
+        <lastmod>2025-01-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
-
-    <!-- Section Dépannages -->
     <url>
-        <loc>https://www.borealclim.fr/#depannages</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://www.borealclim.fr/installation-pompe-a-chaleur.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/depannage-climatisation.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/entretien-climatisation.html</loc>
+        <lastmod>2025-01-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Section Réalisations -->
+    <!-- Pages Geographiques -->
     <url>
-        <loc>https://www.borealclim.fr/#realisations</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://www.borealclim.fr/climatisation-paris.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-seine-et-marne-77.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-seine-saint-denis-93.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-val-de-marne-94.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-hauts-de-seine-92.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-val-d-oise-95.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-yvelines-78.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-essonne-91.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Pages Marques -->
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-daikin.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-mitsubishi.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-fujitsu.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-toshiba.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-atlantic.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.borealclim.fr/climatisation-airwell.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-    <!-- Section Contact -->
+    <!-- Page Mentions Legales -->
     <url>
-        <loc>https://www.borealclim.fr/#contact</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://www.borealclim.fr/mentions-legales.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 
 </urlset>
