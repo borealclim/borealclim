@@ -1814,6 +1814,64 @@ section {
         column-count: 3;
         column-gap: var(--spacing-sm);
     }
+
+    /* Mobile Navigation */
+    .nav-list {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: var(--spacing-md);
+        gap: 0;
+        transition: var(--transition);
+        box-shadow: var(--shadow-md);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 999;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list > li {
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-list > li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-list .nav-link {
+        display: block;
+        padding: var(--spacing-md);
+        text-align: left;
+    }
+
+    .nav-list .nav-link::after {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1868,58 +1926,6 @@ section {
     .gallery-grid {
         column-count: 2;
         column-gap: var(--spacing-sm);
-    }
-
-    .nav-list {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: white;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        padding: var(--spacing-md);
-        gap: 0;
-        transition: var(--transition);
-        box-shadow: var(--shadow-md);
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .nav-list.active {
-        left: 0;
-    }
-
-    .nav-list > li {
-        border-bottom: 1px solid #eee;
-    }
-
-    .nav-list > li:last-child {
-        border-bottom: none;
-    }
-
-    .nav-list .nav-link {
-        display: block;
-        padding: var(--spacing-md);
-        text-align: left;
-    }
-
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(8px, 8px);
-    }
-
-    .nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
     }
 
     .services-grid {
