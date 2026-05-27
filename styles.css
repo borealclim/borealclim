@@ -1559,6 +1559,126 @@ section {
     border-radius: 6px;
 }
 
+/* ===== NOS CLIENTS (défilement automatique) ===== */
+.clients {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg-light);
+    overflow: hidden;
+}
+
+.clients-marquee {
+    margin-top: var(--spacing-lg);
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%);
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%);
+}
+
+.clients-track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: clients-scroll-right 30s linear infinite;
+}
+
+/* Pause au survol pour laisser le temps de lire les logos */
+.clients-marquee:hover .clients-track {
+    animation-play-state: paused;
+}
+
+.client-logo {
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    height: 120px;
+    background: white;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md);
+    margin-right: var(--spacing-lg);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+/* Légende affichée au survol, en surimpression en bas de la carte */
+.client-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 9px 12px 12px;
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.client-logo:hover .client-name {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.client-logo:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.client-img {
+    max-width: 170px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photo (devanture) : remplit la carte avec des bords atténués en fondu */
+.client-img.client-photo {
+    max-width: none;
+    max-height: none;
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    mask-image: radial-gradient(ellipse 85% 85% at center, black 55%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 55%, transparent 100%);
+}
+
+/* Le défilement va vers la droite : la piste glisse de -50% vers 0 */
+@keyframes clients-scroll-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* Respect des préférences d'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    .clients-track {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* ===== WHY CHOOSE US ===== */
 .why-choose {
     background: var(--color-bg-light);
