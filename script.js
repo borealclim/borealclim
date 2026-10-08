@@ -53,7 +53,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form submission handler with mailto
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
+// Le formulaire n'existe que sur l'accueil : sans ce garde, le script s'arrête sur les autres pages
+contactForm?.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Get form data
@@ -711,7 +712,8 @@ const lightbox = {
 
     updateImage() {
         const currentImg = this.galleryItems[this.currentIndex];
-        this.image.src = currentImg.src;
+        // data-full : version haute définition si la vignette est allégée
+        this.image.src = currentImg.dataset.full || currentImg.src;
         this.image.alt = currentImg.alt;
 
         // Update button states
