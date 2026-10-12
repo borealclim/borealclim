@@ -105,6 +105,8 @@ body {
 }
 
 .logo-img {
+    /* bloc : sans cela, le lien qui entoure le logo sur les pages secondaires ajoute 8 px à l'en-tête */
+    display: block;
     height: 60px;
     width: auto;
     max-width: 200px;
