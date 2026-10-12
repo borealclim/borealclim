@@ -40,6 +40,18 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Professionnels -->
+    <url>
+        <loc>https://www.borealclim.fr/professionnels.html</loc>
+        <lastmod>2026-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.borealclim.fr/images/installations/pro-bureaux-unite-murale-1.webp</image:loc>
+            <image:title>Climatisation murale installée dans des bureaux</image:title>
+        </image:image>
+    </url>
+
     <!-- Nos dernieres installations -->
     <url>
         <loc>https://www.borealclim.fr/nos-dernieres-installations.html</loc>
